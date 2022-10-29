@@ -837,7 +837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 913ee99a004e3c540884a4e3cf2bda57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NumberText: {fileID: 829079034}
+  numberText: {fileID: 829079034}
 --- !u!4 &1057143000
 Transform:
   m_ObjectHideFlags: 0

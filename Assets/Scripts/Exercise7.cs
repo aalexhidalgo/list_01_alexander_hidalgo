@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Exercise7 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject spherePrefab;
+    public Slider scaleSlider;
 
     // Update is called once per frame
     void Update()
     {
         
     }
-}
+
+    public void AlphaSphere()
+    {
+        scaleValue.x = scaleSlider.value;
+        scaleValue.y = scaleSlider.value;
+        scaleValue.z = scaleSlider.value;
+
+        spherePrefab.transform.localScale = scaleValue;
+    }
