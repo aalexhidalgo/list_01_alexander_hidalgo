@@ -9,9 +9,9 @@ public class Exercise10 : MonoBehaviour
     public TextMeshProUGUI pointsText;
     private int pointsCounter;
 
-    private void OnMouseDown()
+    public void UpdatePoints(int points)
     {
-        pointsCounter++;
+        pointsCounter += points;
         pointsText.text = $"{pointsCounter}";
     }
 }
