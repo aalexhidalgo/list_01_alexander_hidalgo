@@ -1,18 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Exercise9 : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject pointLight;
+    public Toggle lightToggle;
+
     void Start()
     {
-        
+        lightToggle.isOn = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SwitchToggle()
     {
-        
+        if(lightToggle.isOn == true)
+        {
+            pointLight.SetActive(true);
+        }
+        else
+        {
+            pointLight.SetActive(false);
+        }
     }
 }

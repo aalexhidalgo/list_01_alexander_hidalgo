@@ -1,18 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Exercise8 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public TextMeshProUGUI enterText;
+    public TMP_InputField usernameText;
 
-    // Update is called once per frame
-    void Update()
+    public void ConfirmButton()
     {
-        
+        /*This avoidand empty usernames and blanks spaces
+        as a username but let players to do a blank space between letters,
+        with results like: alexhidalgo, alex hidalgo or a l e x*/
+
+        if(string.IsNullOrWhiteSpace(usernameText.text))
+        {
+            enterText.text = "Empty username, please fill correctly the box";
+        }
+        else
+        {
+            enterText.text = $"¡Hello {usernameText.text} and welcome to this wonderful world!";
+        }
     }
 }
