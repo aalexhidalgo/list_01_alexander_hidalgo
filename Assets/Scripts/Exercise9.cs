@@ -10,15 +10,18 @@ public class Exercise9 : MonoBehaviour
 
     void Awake()
     {
+        //At the beginning the light it's off
         lightToggle.isOn = false;
     }
 
     public void SwitchToggle()
     {
+        //If it's on, the point light will be on
         if(lightToggle.isOn == true)
         {
             pointLight.SetActive(true);
         }
+        //If it's off the point light will be off
         else
         {
             pointLight.SetActive(false);

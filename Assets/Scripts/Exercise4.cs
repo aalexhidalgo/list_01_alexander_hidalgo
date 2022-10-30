@@ -11,10 +11,12 @@ public class Exercise4 : MonoBehaviour
 
     public void ScaleSphere()
     {
+        //Every axis of the sphere is taked by the slider
         scaleValue.x = scaleSlider.value;
         scaleValue.y = scaleSlider.value;
         scaleValue.z = scaleSlider.value;
 
+        //The scale will be applied by the value of the slider
         spherePrefab.transform.localScale = scaleValue;
     }
 }

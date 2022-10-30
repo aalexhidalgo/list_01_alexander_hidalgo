@@ -10,10 +10,14 @@ public class Exercise2 : MonoBehaviour
     public TextMeshProUGUI numberText;
     public TextMeshProUGUI resultText;
 
+    public GameObject startText;
+
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
+            //A warning text before display your number on the screen
+            startText.SetActive(false);
             OddEven();
         }
     }

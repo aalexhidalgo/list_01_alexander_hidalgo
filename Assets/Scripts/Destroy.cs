@@ -14,6 +14,7 @@ public class Destroy : MonoBehaviour
 
     public void OnMouseDown()
     {
+        //Everytime a pumpkin is clicked a point will be added to the counter and the pumpkin will disappear
         exercise10Script.UpdatePoints(points);
         Destroy(gameObject);
     }

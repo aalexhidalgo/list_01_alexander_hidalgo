@@ -15,6 +15,7 @@ public class Exercise6 : MonoBehaviour
 
     public void ColorSelection(int selected)
     {
+        //The color will be replaced by the value of the dropdown
         cylinderPrefab.GetComponent<Renderer>().material.color = colors[selected];
     }
 }

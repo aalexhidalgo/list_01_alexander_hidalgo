@@ -9,9 +9,11 @@ public class Exercise10 : MonoBehaviour
     public TextMeshProUGUI pointsText;
     private int pointsCounter;
 
+    //Surprise
     public TextMeshProUGUI gameText;
     public GameObject finalPumpkin;
 
+    //This will update the text with the amount of points scored
     public void UpdatePoints(int points)
     {
         pointsCounter += points;
@@ -24,6 +26,7 @@ public class Exercise10 : MonoBehaviour
         }
     }
 
+    //Surprise
     private IEnumerator Win()
     {
         yield return new WaitForSeconds(0.5f);

@@ -13,6 +13,7 @@ public class Exercise3 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
+            //We randomize a new position everytime the "return" key is pressed that will take instantly the cube
             pos = new Vector3 (Random.Range(-xLimit, xLimit), Random.Range (-yLimit, yLimit), 0);
             cubePrefab.transform.position = pos;
         }
