@@ -8,13 +8,10 @@ public class Exercise7 : MonoBehaviour
 {
     public GameObject spherePrefab;
     private Material sphereMat;
-    public Slider alphaSlider;
 
     void Start()
     {
-        //At the beginnig, we set the value to 1 to see the sphere       
         sphereMat = spherePrefab.GetComponent<Renderer>().material;
-        alphaSlider.value = 1;
     }
 
     public void AlphaSphere(float alphaValue)

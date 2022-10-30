@@ -5,8 +5,8 @@ using UnityEngine;
 public class Exercise3 : MonoBehaviour
 {
     public GameObject cubePrefab;
-    private float xLimit = 6.6f;
-    private float yLimit = 3.5f;
+    private float xLimit = 8.1f;
+    private float yLimit = 4.35f;
     private Vector3 pos;
 
     void Update()

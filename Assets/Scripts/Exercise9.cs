@@ -8,7 +8,7 @@ public class Exercise9 : MonoBehaviour
     public GameObject pointLight;
     public Toggle lightToggle;
 
-    void Start()
+    void Awake()
     {
         lightToggle.isOn = false;
     }
